@@ -1,24 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-		<!--	created with www.mysitemapgenerator.com	-->
-		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-	<loc>https://healthwebsites.github.io/tingleguard/</loc>
-	<lastmod>2026-09-08T13:41:33+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://healthwebsites.github.io/tingleguard/privacy</loc>
-	<lastmod>2026-09-08T13:41:34+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://healthwebsites.github.io/tingleguard/term</loc>
-	<lastmod>2026-09-08T13:41:34+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://healthwebsites.github.io/tingleguard/disclaimer</loc>
-	<lastmod>2026-09-08T13:41:35+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://healthwebsites.github.io/tingleguard/</loc>
+  </url>
+
 </urlset>
