@@ -1,0 +1,30 @@
+# Enable Rewrite Engine
+RewriteEngine On
+
+# ---------------------------------------
+# Redirect /index.html to /
+# ---------------------------------------
+RewriteRule ^index\.html$ / [R=301,L]
+
+# ---------------------------------------
+# Remove trailing slash (except directories)
+# ---------------------------------------
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# ---------------------------------------
+# Redirect .html URLs to extensionless URLs
+# Example: /about.html -> /about
+# ---------------------------------------
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html(?:[\s?]|$)
+RewriteRule ^(.+)\.html$ /$1 [R=301,L]
+
+# ---------------------------------------
+# Internally rewrite extensionless URLs
+# Example: /about -> /about.html
+# Only if about.html actually exists
+# ---------------------------------------
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L]
